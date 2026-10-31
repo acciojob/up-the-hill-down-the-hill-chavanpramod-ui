@@ -1,6 +1,5 @@
 function aveSpd(upTime, upSpd, downSpd) {
-  // your code here
-upTime = Number(upTime);
+    upTime = Number(upTime);
     upSpd = Number(upSpd);
     downSpd = Number(downSpd);
 
@@ -11,9 +10,7 @@ upTime = Number(upTime);
     let totalDistance = distance * 2;
     let totalTime = timeUpHours + timeDownHours;
 
-    let averageSpeed = totalDistance / totalTime;
-
-    return Math.round(averageSpeed);
+    return totalDistance / totalTime;
 }
 
 // Do not change the code below
