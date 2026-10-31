@@ -11,7 +11,9 @@ upTime = Number(upTime);
     let totalDistance = distance * 2;
     let totalTime = timeUpHours + timeDownHours;
 
-    return totalDistance / totalTime;
+    let averageSpeed = totalDistance / totalTime;
+
+    return Math.round(averageSpeed);
 }
 
 // Do not change the code below
