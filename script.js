@@ -10,12 +10,14 @@ function aveSpd(upTime, upSpd, downSpd) {
     let totalDistance = distance * 2;
     let totalTime = timeUpHours + timeDownHours;
 
-    return totalDistance / totalTime;
+    let averageSpeed = totalDistance / totalTime;
+
+    return parseInt(averageSpeed, 10);
 }
 
 // Do not change the code below
 const upTime = prompt("Enter upTime: ");
-const downTime = prompt("Enter downTime: ");
+const upSpd = prompt("Enter upSpd: ");
 const downSpd = prompt("Enter downSpd: ");
 
-alert(aveSpd(upTime, downTime, downSpd));
+alert(aveSpd(upTime, upSpd, downSpd));
